@@ -1,0 +1,114 @@
+@import '../../global.scss';
+
+.menu {
+  border-radius: 20px;
+  width: 300px;
+  height: 600px;
+  background-color: #4f4846;
+  position: fixed;
+  top: 100px;
+  right: -300px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 1s ease;
+  color: black;
+
+  &.active {
+    transform: translateX(-105%);
+  }
+}
+
+ul {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 200;
+  padding: 0;
+  transition: all 2s ease;
+  width: 300px;
+  justify-content: space-between;
+  .home {
+    transition: all 1s ease;
+    transform-origin: center;
+    &:hover {
+      animation: togreen 1s infinite;
+    }
+    @keyframes togreen {
+      100% {
+        background-color: lightgreen;
+        width: 200px;
+        animation-play-state: paused;
+      }
+    }
+  }
+  .home {
+    transition: all 1s ease;
+    transform-origin: center;
+    &:hover {
+      animation: togreen 1s infinite;
+    }
+    @keyframes togreen {
+      100% {
+        background-color: #85dcb8;
+        width: 200px;
+        animation-play-state: paused;
+      }
+    }
+  }
+  .project {
+    transition: all 1s ease;
+    transform-origin: center;
+    &:hover {
+      animation: topink 1s infinite;
+    }
+    @keyframes topink {
+      100% {
+        background-color: #e8a87c;
+        width: 200px;
+      }
+    }
+  }
+  .contest {
+    transition: all 1s ease;
+    transform-origin: center;
+    &:hover {
+      animation: topurple 1s infinite;
+    }
+    @keyframes topurple {
+      100% {
+        background-color: #c38d9e;
+        width: 200px;
+        animation-play-state: paused;
+      }
+    }
+  }
+  .contact2 {
+    transition: all 1s ease;
+    transform-origin: center;
+    &:hover {
+      animation: tolight 1s infinite;
+    }
+    @keyframes tolight {
+      100% {
+        background-color: #41b3a3;
+        width: 200px;
+        animation-play-state: paused;
+      }
+    }
+  }
+
+  li {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    width: 150px;
+    border-radius: 20px;
+    justify-content: center;
+    margin-left: 80px;
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+}

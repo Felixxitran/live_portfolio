@@ -1,0 +1,33 @@
+.section {
+  align-items: center;
+  background-color: white;
+  position: fixed;
+}
+
+.alert {
+  color: black;
+  z-index: 4;
+  background-color: rgb(233, 233, 233);
+  position: fixed;
+  text-align: center;
+  padding-top: 23px;
+  width: 20vw;
+  height: 10vh;
+}
+
+/* The close button */
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+  color: black;
+}

@@ -1,0 +1,22 @@
+.app {
+  margin: 0;
+  height: calc(100vh+70px);
+  .section {
+    height: 100vh;
+    background-color: white;
+    position: relative;
+    scroll-behavior: smooth;
+    width: 100%;
+    scroll-snap-type: y mandatory;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    > * {
+      width: 100vw;
+
+      height: 100vh; //the minus have to space from 100vh or else it wont work
+      scroll-snap-align: bottom;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+outline 
+	menu 
+	slider 
+	words effect 
+	down button to next slide 
+	zoooming anything
+
+*down button:
+	<a></a>
+	postion:absolute (relative to the ancestor)
+	to zoom with the transform origin:center , the item must be in the center of the div 
+
+*zooming anything: 
+	transition works only for animation and transform so to adjust something, make it  a function 
+	&:hover{
+	animation: bigger 2s;
+	@keyframe bigger{
+	font-size:60px;
+	}
+}
+
+*words effect 
+	import init from ityped
+	init(textRef.current,{showCursor:false,
+	strings['whatever','whatsoever']}
+
+
+
+
+	
+	
+	

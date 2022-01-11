@@ -1,0 +1,38 @@
+.review {
+  background-image: url('../../assets/sao.jpg');
+  background-size: 100% 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  width: 500px;
+  height: 600px;
+  background-color: black;
+  opacity: 1;
+  border-radius: 10px;
+  .section {
+    width: 100%;
+    height: 100%;
+    .person-img {
+      border-radius: 50%;
+      margin-bottom: 1rem;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border: 4px solid var(--clr-grey-8);
+      box-shadow: var(--dark-shadow);
+    }
+  }
+}
+
+article.activeSlide {
+  opacity: 1;
+  transform: translateX(0);
+}
+article.lastSlide {
+  transform: translateX(-100%);
+}
+article.nextSlide {
+  transform: translateX(100%);
+}
